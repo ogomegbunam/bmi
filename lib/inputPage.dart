@@ -18,55 +18,44 @@ class _InputPageState extends State<InputPage> {
             child: Row(
               children: <Widget>[
                 Expanded(
-                  child: Container(
-                    margin: EdgeInsets.all(15.0),
-                    decoration: BoxDecoration(
-                      color: Color(0xFF1D1E33),
-                    ),
-                  ),
+                  child: ReuasableCard(),
                 ),
                 Expanded(
-                    child: Container(
-                  margin: EdgeInsets.all(15.0),
-                  decoration: BoxDecoration(
-                    color: Color(0xFF1D1E33),
-                  ),
-                )),
+                  child: ReuasableCard(),),
               ],
             ),
           ),
           Expanded(
-            child: Container(
-              margin: EdgeInsets.all(15.0),
-              decoration: BoxDecoration(
-                color: Color(0xFF1D1E33),
-              ),
-            ),
+            child: ReuasableCard(),
           ),
           Expanded(
             child: Row(
               children: <Widget>[
                 Expanded(
-                  child: Container(
-                    margin: EdgeInsets.all(15.0),
-                    decoration: BoxDecoration(
-                      color: Color(0xFF1D1E33),
-                      borderRadius: BorderRadius.circular(10.0),
-                    ),
-                  ),
+                  child: ReuasableCard(),
                 ),
                 Expanded(
-                    child: Container(
-                  margin: EdgeInsets.all(15.0),
-                  decoration: BoxDecoration(
-                    color: Color(0xFF1D1E33),
-                    borderRadius: BorderRadius.circular(10.0),
-                  ),
-                )),
+                    child: ReuasableCard(),
+                ),
               ],
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class ReuasableCard extends StatelessWidget {
+   ReuasableCard({this.colour});
+  Color colour;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.all(15.0),
+      decoration: BoxDecoration(
+        color: Color(0xFF1D1E33),
       ),
     );
   }

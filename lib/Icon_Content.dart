@@ -1,30 +1,27 @@
 import 'package:flutter/material.dart';
+import 'constants.dart';
 
 class IconContent extends StatelessWidget {
-  IconContent({this.icon , this.label});
+  IconContent({this.icon, this.label, this.Colour});
 
   final IconData icon;
   final String label;
+  final Color Colour;
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
         Icon(
-          icon ,
-          size: 80.0 ,
-        ) ,
+          icon,
+          size: 80.0,
+          color: Colour,
+        ),
         SizedBox(
-          height: 15.0 ,
-        ) ,
-        Text(
-          label ,
-          style: TextStyle(
-            fontSize: 18.0 ,
-            color: Color(0xFF8D8E98) ,
-          ) ,
-        ) ,
-      ] ,
+          height: 15.0,
+        ),
+        Text(label, style: kLabelTextStyle),
+      ],
     );
   }
 }

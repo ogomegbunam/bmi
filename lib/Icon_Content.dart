@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'constants.dart';
 
 class IconContent extends StatelessWidget {
-  IconContent({this.icon, this.label, this.Colour});
+  IconContent({this.icon, this.label, this.colour});
 
   final IconData icon;
   final String label;
-  final Color Colour;
+  final Color colour;
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class IconContent extends StatelessWidget {
         Icon(
           icon,
           size: 80.0,
-          color: Colour,
+          color: colour,
         ),
         SizedBox(
           height: 15.0,
